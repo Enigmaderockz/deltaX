@@ -1,0 +1,122 @@
+# Question 1: What will be the output of the following code?
+
+numbers = [1, 2, 3, 4, 5]
+squared = [x * x for x in numbers if x % 2 == 0]
+
+A) [4, 16]
+B) [2, 4, 6, 8, 10]
+C) [1, 4, 9, 16, 25]
+D) [1, 3, 5]
+
+# Question 2: What will be the output of the following code?
+
+def divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "Cannot divide by zero"
+    finally:
+        return "Finally block executed"
+
+result = divide(10, 2)
+
+A) 5.0
+B) "Cannot divide by zero"
+C) "Finally block executed"
+D) None
+
+# Question 3: What will be the output of the following code?
+
+text = "Hello, Python!"
+result = text[::-1]
+
+A) "!nohtyP ,olleH"
+B) "!nohtyP olleH"
+C) "Python, Hello!"
+D) "Hello, Python!"
+
+# Question 4: What will be the output of the following code?
+
+file_path = "data.txt"
+with open(file_path, "r") as file:
+    content = file.read()
+    words = content.split()
+
+A) The number of lines in the file
+B) The total number of characters in the file
+C) The number of words in the file
+D) The content of the last line in the file
+
+# Question 5: What will be the output of the following code?
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 5, 7]
+
+result = any(x in list1 for x in list2)
+
+A) True
+B) False
+C) [1, 2, 3, 4, 5]
+D) [3, 5]
+
+# Question 6: What will be the output of the following code?
+
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+except ValueError:
+    result = "Invalid input: Please enter a valid number."
+except ZeroDivisionError:
+    result = "Cannot divide by zero."
+else:
+    result = "Division successful."
+
+A) "Invalid input: Please enter a valid number."
+B) "Cannot divide by zero."
+C) "Division successful."
+D) None
+
+# Question 7: What is the purpose of using assertions in unit tests?
+
+A) To terminate the test case immediately
+B) To check if a given test case is passing or failing
+C) To handle exceptions raised during test execution
+D) To skip certain test cases
+
+
+# Question 9: When performing BVA on a system accepting floating-point numbers between 0.0 and 1.0 (inclusive), which values should be considered for boundary testing?
+
+A) 0.0 and 1.0 only
+B) 0.1 and 0.9 only
+C) 0.0, 0.1, 0.9, and 1.0
+D) 0.5 only
+
+# Question 4: For a date input field accepting dates up to the year 2025, what is the appropriate upper boundary test value?
+
+A) 2024
+B) 2025
+C) 2026
+D) 2027
+
+# Question 3: For a text field with a minimum length of 5 characters, what is the appropriate lower boundary test value?
+
+A) 4 characters
+B) 5 characters
+C) 6 characters
+D) 1 character
+
+Answers
+
+A) [4, 16]
+C) "Finally block executed"
+A) "!nohtyP ,olleH"
+C) The number of words in the file
+A) True
+C) "Division successful."
+
+C) 0.0, 0.1, 0.9, and 1.0
+4 characters
+2024
+To check if a given test case is passing or failing
+
+
