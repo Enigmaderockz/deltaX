@@ -1,0 +1,18 @@
+
+SELECT Department, Salary
+FROM Employees
+WHERE Salary = MAX(Salary);
+
+SELECT Department, Salary AS MaxSalary
+FROM Employees
+WHERE Salary = MAX(Salary)
+GROUP BY Department;
+
+SELECT Department, Salary
+FROM Employees
+GROUP BY Department
+HAVING Salary = MAX(Salary);
+
+SELECT Department, MAX(Salary) AS MaxSalary
+FROM Employees
+GROUP BY Department;
